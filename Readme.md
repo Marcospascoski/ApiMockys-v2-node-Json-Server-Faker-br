@@ -1,4 +1,4 @@
-# ApiMockys-node com MongoDB
+# ApiMockys-node Json Server Faker-br
 
 <b>Ferramentas</b><br>
 <b>1 - Instalar o Nodejs atual</b><br>
@@ -10,7 +10,7 @@ npm init
 
 <b>3 - Instalar - Abrir o cmd e execute cada comando:</b><br>
 npm i json-server --save-dev
-npm i faker -- save
+npm i faker-br -- save
 
 <b>Clone o repositório</b><br>
 
