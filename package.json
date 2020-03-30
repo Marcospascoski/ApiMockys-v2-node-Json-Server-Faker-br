@@ -1,0 +1,18 @@
+{
+  "name": "apimockys-node-jsonserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node ./dados-mockys/gerador-db.js > ./db.json"
+  },
+  "author": "Marcos Pask",
+  "license": "ISC",
+  "devDependencies": {
+    "json-server": "^0.16.1"
+  },
+  "dependencies": {
+    "faker-br": "^0.2.4"
+  }
+}
