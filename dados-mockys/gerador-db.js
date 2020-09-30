@@ -3,22 +3,22 @@ faker.setLocale = 'pt_BR';
 
   let database = { 
     
-    grupos: [],
-    produtos: [],
-    usuarios: [],
-    pessoas:[],
-    enderecos:[]
+    grupos: { results: [] },
+    produtos: { results: [] },
+    usuarios: { results: [] },
+    pessoas: { results: [] },
+    enderecos: { results: [] }
   
   };
   const quantidade = 40;
 
   for (let i = 1; i<= quantidade; i++) {
-   database.grupos.push({
+   database.grupos.results.push({
     id: i,
     nome: faker.commerce.department()
   });
   
-  database.produtos.push({
+  database.produtos.results.push({
     id: i,
     codigoBarras: faker.random.number({min:8, max:13}),
     nome: faker.commerce.productName(),
@@ -29,7 +29,7 @@ faker.setLocale = 'pt_BR';
     imagem: faker.image.food() //"https://source.unsplash.com/1600x900/?product"
   });
 
-  database.usuarios.push({
+  database.usuarios.results.push({
     id: i,
     nome: faker.internet.userName(),
     email: faker.internet.email(),
@@ -40,7 +40,7 @@ faker.setLocale = 'pt_BR';
     imagem: faker.image.avatar()
   });
 
-  database.pessoas.push({
+  database.pessoas.results.push({
     id: i,
     nome: faker.name.firstName() + " " + faker.name.lastName(),
     cpfcnpj: faker.br.cpf() || faker.br.cnpj(),
@@ -50,7 +50,7 @@ faker.setLocale = 'pt_BR';
     contato: faker.name.firstName()
   });
 
-  database.enderecos.push({
+  database.enderecos.results.push({
     pessoaId: { id: i },
     id: i,
     nome: faker.company.companyName(0),
